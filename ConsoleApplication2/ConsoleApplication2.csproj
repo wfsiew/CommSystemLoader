@@ -47,6 +47,37 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="adsl\external.xml" />
+    <Content Include="adsl\internal.xml" />
+    <Content Include="corporateinternetpremium\external.xml" />
+    <Content Include="corporateinternetpremium\internal.xml" />
+    <Content Include="corporateinternetpro\external.xml" />
+    <Content Include="corporateinternetpro\internal.xml" />
+    <Content Include="dcs\external.xml" />
+    <Content Include="dcs\internal.xml" />
+    <Content Include="e1\external.xml" />
+    <Content Include="e1\internal.xml" />
+    <Content Include="fibre+voice\external.xml" />
+    <Content Include="fibre+voice\internal.xml" />
+    <Content Include="fibre+\eternal.xml" />
+    <Content Include="fibre+\internal.xml" />
+    <Content Include="idd\external.xml" />
+    <Content Include="idd\internal.xml" />
+    <Content Include="metro-e\external.xml" />
+    <Content Include="metro-e\internal.xml" />
+    <Content Include="onetimeservices\external.xml" />
+    <Content Include="onetimeservices\internal.xml" />
+    <Content Include="recurringcontract\external.xml" />
+    <Content Include="recurringcontract\internal.xml" />
+    <Content Include="sip\external.xml" />
+    <Content Include="sip\internal.xml" />
+    <Content Include="speed+\external.xml" />
+    <Content Include="speed+\internal.xml" />
+    <Content Include="vsat\external.xml" />
+    <Content Include="vsat\internal.xml" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
