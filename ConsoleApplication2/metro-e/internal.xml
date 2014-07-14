@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CommList>
+  <Comm>
+    <!-- 4 - 30 Mbps -->
+    <type>1</type>
+    <value>0.03</value>
+    <tier1>0.01</tier1>
+    <tier2>0.005</tier2>
+    <tier3>0</tier3>
+  </Comm>
+  <Comm>
+    <!-- 40 - 100 Mbps -->
+    <type>2</type>
+    <value>0.03</value>
+    <tier1>0.01</tier1>
+    <tier2>0.005</tier2>
+    <tier3>0</tier3>
+  </Comm>
+</CommList>
