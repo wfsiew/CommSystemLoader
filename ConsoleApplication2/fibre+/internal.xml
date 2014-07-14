@@ -1,6 +1,2 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Comm>
-  <value>0.5</value>
-  <tier1>0.15</tier1>
-  <tier2>0.08</tier2>
-</Comm>
+<Comm value="0.5" tier1="0.15" tier2="0.08"></Comm>
