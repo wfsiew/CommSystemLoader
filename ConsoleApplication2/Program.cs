@@ -13,13 +13,13 @@ namespace ConsoleApplication2
     {
         static void Main(string[] args)
         {
-            string path = "..\\..\\fibre+\\external.xml";
-            var d = FibrePlusExternal.LoadList(path);
+            string path = "..\\..\\vsat\\external.xml";
+            var d = VSATExternal.Load(path);
 
-            foreach (KeyValuePair<int, FibrePlusExternal> k in d)
-            {
-                Console.WriteLine("{0} {1} {2} {3} {4}", k.Value.Type, k.Value.Commission, k.Value.Tier1, k.Value.Tier2, k.Value.Tier3);
-            }
+            Console.WriteLine(d.Commission);
+            Console.WriteLine(d.Tier1);
+            Console.WriteLine(d.Tier2);
+            Console.WriteLine(d.Tier3);
 
             Console.ReadKey();
         }
