@@ -13,13 +13,9 @@ namespace ConsoleApplication2
     {
         static void Main(string[] args)
         {
-            string path = "..\\..\\vsat\\external.xml";
-            var d = VSATExternal.Load(path);
-
-            Console.WriteLine(d.Commission);
-            Console.WriteLine(d.Tier1);
-            Console.WriteLine(d.Tier2);
-            Console.WriteLine(d.Tier3);
+            SettingFactory o = SettingFactory.Instance;
+            double v = o.ADSLInternalSetting.GetCommission(1000, 0);
+            Console.WriteLine(v);
 
             Console.ReadKey();
         }
