@@ -47,7 +47,7 @@
     <Compile Include="Models\ADSL.cs" />
     <Compile Include="Models\CorporateInternetPremium.cs" />
     <Compile Include="Models\CorporateInternetPro.cs" />
-    <Compile Include="Models\Dcs.cs" />
+    <Compile Include="Models\DiscountedCallService.cs" />
     <Compile Include="Models\E1.cs" />
     <Compile Include="Models\FibrePlus.cs" />
     <Compile Include="Models\FibrePlusVoice.cs" />
@@ -73,8 +73,8 @@
     <Content Include="corporateinternetpremium\internal.xml" />
     <Content Include="corporateinternetpro\external.xml" />
     <Content Include="corporateinternetpro\internal.xml" />
-    <Content Include="dcs\external.xml" />
-    <Content Include="dcs\internal.xml" />
+    <Content Include="discountedcallservice\external.xml" />
+    <Content Include="discountedcallservice\internal.xml" />
     <Content Include="e1\external.xml" />
     <Content Include="e1\internal.xml" />
     <Content Include="fibre+voice\external.xml" />
