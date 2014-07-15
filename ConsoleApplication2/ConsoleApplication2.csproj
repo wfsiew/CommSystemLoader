@@ -44,9 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Adsl.cs" />
+    <Compile Include="Models\ADSL.cs" />
     <Compile Include="Models\Dcs.cs" />
     <Compile Include="Models\FibrePlus.cs" />
+    <Compile Include="Models\IDD.cs" />
+    <Compile Include="Models\SIP.cs" />
     <Compile Include="Models\SpeedPlus.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
