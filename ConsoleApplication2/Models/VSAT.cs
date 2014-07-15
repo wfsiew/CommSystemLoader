@@ -18,6 +18,33 @@ namespace ConsoleApplication2.Models
 
         private static Logger logger = LogManager.GetCurrentClassLogger();
 
+        public double GetCommission(double amt, int level)
+        {
+            double a = 0;
+
+            switch (level)
+            {
+                case 1:
+                    a = Tier1;
+                    break;
+
+                case 2:
+                    a = Tier2;
+                    break;
+
+                case 3:
+                    a = Tier3;
+                    break;
+
+                default:
+                    a = Commission;
+                    break;
+            }
+
+            double x = a * amt;
+            return x;
+        }
+
         public static VSATInternal Load(string path)
         {
             try

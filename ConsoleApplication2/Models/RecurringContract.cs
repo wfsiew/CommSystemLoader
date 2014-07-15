@@ -18,6 +18,29 @@ namespace ConsoleApplication2.Models
 
         private static Logger logger = LogManager.GetCurrentClassLogger();
 
+        public double GetCommission(double amt, int level)
+        {
+            double a = 0;
+
+            switch (level)
+            {
+                case 1:
+                    a = Tier1;
+                    break;
+
+                case 2:
+                    a = Tier2;
+                    break;
+
+                default:
+                    a = Commission;
+                    break;
+            }
+
+            double x = a * amt;
+            return x;
+        }
+
         public static Dictionary<int, RecurringContractInternal> LoadList(string path)
         {
             try
@@ -78,6 +101,33 @@ namespace ConsoleApplication2.Models
         public double Tier3 { get; set; }
 
         private static Logger logger = LogManager.GetCurrentClassLogger();
+
+        public double GetCommission(double amt, int level)
+        {
+            double a = 0;
+
+            switch (level)
+            {
+                case 1:
+                    a = Tier1;
+                    break;
+
+                case 2:
+                    a = Tier2;
+                    break;
+
+                case 3:
+                    a = Tier3;
+                    break;
+
+                default:
+                    a = Commission;
+                    break;
+            }
+
+            double x = a * amt;
+            return x;
+        }
 
         public static Dictionary<int, RecurringContractExternal> LoadList(string path)
         {

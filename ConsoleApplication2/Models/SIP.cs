@@ -18,7 +18,30 @@ namespace ConsoleApplication2.Models
 
         private static Logger logger = LogManager.GetCurrentClassLogger();
 
-        public static Dictionary<double, SIPInternal> LoadList(string path)
+        public double GetCommission(double amt, int level)
+        {
+            double a = 0;
+
+            switch (level)
+            {
+                case 1:
+                    a = Tier1;
+                    break;
+
+                case 2:
+                    a = Tier2;
+                    break;
+
+                default:
+                    a = Commission;
+                    break;
+            }
+
+            double x = a * amt;
+            return x;
+        }
+
+        public static Dictionary<double, SIPInternal> LoadList(string path, out double maxrate)
         {
             try
             {
@@ -26,10 +49,18 @@ namespace ConsoleApplication2.Models
                 doc.Load(path);
                 XmlNodeList x = doc.SelectNodes("RateList/Rate");
                 Dictionary<double, SIPInternal> l = new Dictionary<double, SIPInternal>();
+                bool first = true;
+                maxrate = 0;
 
                 foreach (XmlNode n in x)
                 {
                     SIPInternal o = SIPInternal.Load(n);
+                    if (first)
+                    {
+                        maxrate = o.Rate;
+                        first = false;
+                    }
+
                     l.Add(o.Rate, o);
                 }
 
@@ -79,7 +110,34 @@ namespace ConsoleApplication2.Models
 
         private static Logger logger = LogManager.GetCurrentClassLogger();
 
-        public static Dictionary<double, SIPExternal> LoadList(string path)
+        public double GetCommission(double amt, int level)
+        {
+            double a = 0;
+
+            switch (level)
+            {
+                case 1:
+                    a = Tier1;
+                    break;
+
+                case 2:
+                    a = Tier2;
+                    break;
+
+                case 3:
+                    a = Tier3;
+                    break;
+
+                default:
+                    a = Commission;
+                    break;
+            }
+
+            double x = a * amt;
+            return x;
+        }
+
+        public static Dictionary<double, SIPExternal> LoadList(string path, out double maxrate)
         {
             try
             {
@@ -87,10 +145,18 @@ namespace ConsoleApplication2.Models
                 doc.Load(path);
                 XmlNodeList x = doc.SelectNodes("RateList/Rate");
                 Dictionary<double, SIPExternal> l = new Dictionary<double, SIPExternal>();
+                bool first = true;
+                maxrate = 0;
 
                 foreach (XmlNode n in x)
                 {
                     SIPExternal o = SIPExternal.Load(n);
+                    if (first)
+                    {
+                        maxrate = o.Rate;
+                        first = false;
+                    }
+
                     l.Add(o.Rate, o);
                 }
 
