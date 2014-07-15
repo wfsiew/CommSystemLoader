@@ -45,11 +45,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\ADSL.cs" />
+    <Compile Include="Models\CorporateInternetPremium.cs" />
+    <Compile Include="Models\CorporateInternetPro.cs" />
     <Compile Include="Models\Dcs.cs" />
     <Compile Include="Models\E1.cs" />
     <Compile Include="Models\FibrePlus.cs" />
     <Compile Include="Models\FibrePlusVoice.cs" />
     <Compile Include="Models\IDD.cs" />
+    <Compile Include="Models\MetroE.cs" />
+    <Compile Include="Models\OneTimeServices.cs" />
+    <Compile Include="Models\RecurringContract.cs" />
     <Compile Include="Models\SIP.cs" />
     <Compile Include="Models\SpeedPlus.cs" />
     <Compile Include="Models\VSAT.cs" />
