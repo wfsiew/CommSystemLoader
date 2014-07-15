@@ -46,7 +46,9 @@
   <ItemGroup>
     <Compile Include="Models\ADSL.cs" />
     <Compile Include="Models\Dcs.cs" />
+    <Compile Include="Models\E1.cs" />
     <Compile Include="Models\FibrePlus.cs" />
+    <Compile Include="Models\FibrePlusVoice.cs" />
     <Compile Include="Models\IDD.cs" />
     <Compile Include="Models\SIP.cs" />
     <Compile Include="Models\SpeedPlus.cs" />
